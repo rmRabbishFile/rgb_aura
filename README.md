@@ -8,13 +8,16 @@ install openRGB
 sudo add-apt-repository ppa:thopiekar/openrgb
 sudo apt update
 sudo apt upgrade openrgb
+pip install openrgb-python
 ```
 
-start
+start andtest
 
 ```bash
 sudo killall openrgb
 sudo openrgb --server
+
+python set_rgb.py 0 static 255,0,0
 ```
 make them as a service
 
